@@ -100,7 +100,7 @@ h1{
 p{  
     font-size: 0.9rem;
     font-weight: 700;
-    padding-top: 20px;
+    padding: 25px 0 30px;
     line-height: 1.9rem;
 }
 
@@ -109,21 +109,27 @@ p{
     color: white;
     font-weight: 500;
     padding: 0.6rem 3rem;
-    margin: 2rem 0;
     font-size: 1.1rem;
 }
 
 .big-info img{
     width: 100%;
+    padding-top: 20px;
 }
 
 .small-info{
     justify-content: center;
 }
 
-i{
+.small-info i{
+    width: 3rem;
     color: #0084fd;;
 }
+
+.fa-2xl {  
+    font-size: 5em;
+    padding: 2.5rem 5rem 4rem 0rem;
+  }
 
 .small-info p{
     text-align: center;
