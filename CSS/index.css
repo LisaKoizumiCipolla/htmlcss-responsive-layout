@@ -225,6 +225,10 @@ h2{
     width: 100%;
 }
 
+.strategic, .app-developement{
+    margin: 0px 32px 32px;
+}
+
 .app-developement{
     background-color: white;
     color: black;
@@ -232,10 +236,7 @@ h2{
     font-style: italic;
     text-align: center;
     padding: 30px 20px;
-}
-
-.strategic, .app-developement{
-    margin: 0px 32px 32px;
+    margin-bottom: 60px;
 }
 
 .app-developement h1{
@@ -280,7 +281,7 @@ h2{
     .planning{
         width: 100%;
         flex-direction: row;
-        background-color: #9792e4;;
+        background-color: #9792e4;
     }
 
     
@@ -301,5 +302,75 @@ h2{
 
     .strategic p{
         padding: 0 1rem;
+    }
+}
+
+.testimonials-wrap{
+    margin: 60px 35px 70px;
+}
+
+.testimonials{
+    text-align: center;
+}
+
+.testimonials p{
+    font-size: 1.15rem;
+    line-height: 2rem;
+    padding: 20px 0;
+}
+
+#title{
+    color: black;
+    padding: 0 0 20px;
+    font-size: 1.1rem;
+}
+
+h4{
+    color: #9792e4;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.testimonial-card{
+    background-color: #9792e4;
+    color: white;
+    border-radius: 50px;
+    flex-direction: column;
+    padding: 25px 20px;
+    margin: 30px 0;
+}
+
+.testimonial-card img{
+    width: 100%;
+    clip-path: circle(38%);
+}
+
+h5{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 480px){
+    .testimonial-card{
+        flex-direction: row;
+    }
+
+    .testimonials-text{
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 810px){
+    
+    .container{
+        max-width: 70%;
+    }
+
+    h4{
+        font-size: 2.7rem;
     }
 }
