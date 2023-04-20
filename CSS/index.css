@@ -15,6 +15,8 @@ header{
 
 nav{
     padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container{
@@ -23,8 +25,6 @@ nav{
 
 .flex{
     display:flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .logo{
@@ -58,7 +58,7 @@ button{
     }
 
     .container{
-        max-width: 1200px;
+        max-width: 60%;
     }
 
     ul{
@@ -73,19 +73,20 @@ button{
     }
 }
 
-.info-wrapper{
-    padding: 50px 0;
+.info-wrapper{  
+    padding: 30px 20px 80px;
     flex-direction: column;
+    align-items: center;
 }
 
 .info{
-    width: 330px;
+    width: 100%;
     border-radius: 1.5rem;
     background-color: #b5ddff;
     color: #5a6e7f;
     padding: 30px 30px 0;
     flex-direction: column;
-    margin: .7rem 0;
+    margin-top: 1.4rem;
 }
 
 .big-info{
@@ -113,12 +114,13 @@ p{
 }
 
 .big-info img{
-    width: 100%;
+    width: 250px;
     padding-top: 20px;
 }
 
 .small-info{
     justify-content: center;
+    align-items: center;
 }
 
 .small-info i{
@@ -133,4 +135,54 @@ p{
 
 .small-info p{
     text-align: center;
+}
+
+@media screen and (min-width: 480px){
+    
+    .info{
+        padding: 30px 25px 0;
+    }
+
+    .info-wrapper{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .big-info{
+        width: calc(((100% / 3) * 2) - 5px);
+    }
+
+    .small-info{
+        width: calc((100% / 3) - 10px);
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 810px){
+
+    nav{
+        padding: 0;
+    }
+
+    .contianer{
+        width: 60%;
+    }
+
+    .info-wrapper{
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+
+    .big-info{
+        flex-direction: row;
+    }
+
+    .big-info img{
+        margin: 0 50px;
+    }
+    
 }
