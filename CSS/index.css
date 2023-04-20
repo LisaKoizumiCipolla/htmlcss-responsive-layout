@@ -73,6 +73,7 @@ button{
     }
 }
 
+
 .info-wrapper{  
     padding: 30px 20px 80px;
     flex-direction: column;
@@ -100,9 +101,13 @@ h1{
 
 p{  
     font-size: 0.9rem;
-    font-weight: 700;
     padding: 25px 0 30px;
     line-height: 1.9rem;
+}
+
+.info p{
+    
+    font-weight: 700;
 }
 
 .big-info button{
@@ -168,7 +173,7 @@ p{
         padding: 0;
     }
 
-    .contianer{
+    .container{
         width: 60%;
     }
 
@@ -185,4 +190,116 @@ p{
         margin: 0 50px;
     }
     
+}
+
+.planning-wrap{
+    background-color: #9792e4;
+}
+
+.planning{
+    background-color: #9792e4;
+    flex-direction: column;
+}
+
+.strategic{
+    color: white;
+}
+
+h2{
+    font-size: 1.9rem;
+    padding: 4.5rem 0 2.7rem;
+}
+
+.strategic p{
+    font-size: 0.95rem;
+    line-height: 1.7rem;
+    padding: 0;
+}
+
+.strategic img{
+    width: 100%;
+    padding-top: 60px;
+}
+
+.app-developement img{
+    width: 100%;
+}
+
+.app-developement{
+    background-color: white;
+    color: black;
+    border-radius: 55px;
+    font-style: italic;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.strategic, .app-developement{
+    margin: 0px 32px 32px;
+}
+
+.app-developement h1{
+    color: black;
+    font-style: normal;
+    padding-top: 20px;
+}
+
+.app-developement p{
+    font-size: .98rem;
+}
+
+.arrow{
+    border-radius: 50%;
+    background-color: #9792e4;
+    color: black;
+    padding: 1rem 1.1rem;
+}
+
+@media screen and (min-width: 480px){
+
+    h2{
+        font-size: 3.9rem;
+    }
+
+    .strategic img {
+        padding: 120px 20px 80px;
+      }
+
+      .app-developement{
+        margin-bottom: 60px;
+      }
+
+}
+
+@media screen and (min-width: 810px){
+
+    .container{
+        max-width: 50%;
+    }
+
+    .planning{
+        width: 100%;
+        flex-direction: row;
+        background-color: #9792e4;;
+    }
+
+    
+
+    h2{
+        font-size: 1.9rem;
+        padding: 4.5rem 0 2.7rem;
+    }
+
+    .strategic{
+        width: 55%;
+    }
+
+    .app-developement{
+        width: 45%;
+        margin: 300px 0 50px;
+    }
+
+    .strategic p{
+        padding: 0 1rem;
+    }
 }
