@@ -415,6 +415,10 @@ h5{
     padding:35px;
 }
 
+.card-wrapper{
+    flex-direction: column;
+}
+
 h6{
     font-size: 3rem;
     font-weight: 700;
@@ -437,3 +441,35 @@ h6{
     font-size: 1rem;
     font-weight: 600;
 }
+
+@media screen and (min-width: 480px){
+
+    .benefits
+
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .benefit-card{
+        width: calc( (100% / 2) - 20px);
+    }
+    
+    h6{
+        font-size: 4.5rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 810px){
+
+    .benefit-card{
+        width: calc( (100% / 3) - 20px);
+    }
+}
+
+@media screen and (min-width: 480px){
+}
+
+@media screen and (min-width: 810px){}
