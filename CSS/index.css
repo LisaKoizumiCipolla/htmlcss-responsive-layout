@@ -5,7 +5,7 @@
 }
 
 body{
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header{
@@ -29,7 +29,7 @@ nav{
 
 .logo{
     
-  padding: 1.3rem 0 1.5rem;
+  padding: 1rem 0 1.25rem;
 }
 
 ul{
@@ -75,17 +75,17 @@ button{
 
 
 .info-wrapper{  
-    padding: 30px 35px 80px;
+    padding: 28px 32px 110px;
     flex-direction: column;
     align-items: center;
 }
 
 .info{
     width: 100%;
-    border-radius: 1.5rem;
+    border-radius: 20px;
     background-color: #b5ddff;
     color: #5a6e7f;
-    padding: 30px 30px 0;
+    padding: 32px 32px 0;
     flex-direction: column;
     margin-top: 1.4rem;
 }
@@ -96,17 +96,17 @@ button{
 
 h1{
     color: #0084fd;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 p{  
-    font-size: 0.9rem;
-    padding: 25px 0 30px;
-    line-height: 1.9rem;
 }
 
 .info p{
     
+    font-size: .95rem;
+    padding: 25px 0 30px;
+    line-height: 1.9rem;
     font-weight: 700;
 }
 
@@ -120,12 +120,12 @@ p{
 
 .big-info img{
     width: 250px;
-    padding-top: 20px;
+    padding-top: 30px;
     object-fit: contain;
+    align-self: flex-end;
 }
 
 .small-info{
-    justify-content: center;
     align-items: center;
 }
 
@@ -157,14 +157,20 @@ p{
 
     .big-info{
         width: calc(((100% / 3) * 2) - 8px);
+        padding: 35px 24px 0;
+    }
+
+    .big-info img{
+        align-self: flex-start;
     }
 
     .small-info{
         width: calc((100% / 3) - 16px);
     }
 
-    p{
+    .info p{
         font-size: 1rem;
+        font-weight: 600;
     }
 }
 
@@ -187,9 +193,9 @@ p{
         flex-direction: row;
     }
 
-    /*.big-info img{
-        margin: 20px 50px 0;
-    }*/
+    .big-info img{
+        align-self: flex-end;
+    }
     
 }
 
@@ -206,9 +212,14 @@ p{
     color: white;
 }
 
+.strategic img{
+    width: 100%;
+    padding-top: 68px;
+}
+
 h2{
-    font-size: 1.9rem;
-    padding: 4.5rem 0 2.7rem;
+    font-size: 2rem;
+    padding: 80px 0 50px;
 }
 
 .strategic p{
@@ -217,17 +228,12 @@ h2{
     padding: 0;
 }
 
-.strategic img{
-    width: 100%;
-    padding-top: 60px;
-}
-
 .app-developement img{
     width: 100%;
 }
 
 .strategic, .app-developement{
-    margin: 0px 30px 32px;
+    margin: 0px 32px 32px;
 }
 
 .app-developement{
@@ -236,7 +242,7 @@ h2{
     border-radius: 55px;
     font-style: italic;
     text-align: center;
-    padding: 30px 20px;
+    padding: 30px 14px;
     margin-bottom: 60px;
 }
 
@@ -247,7 +253,8 @@ h2{
 }
 
 .app-developement p{
-    font-size: .98rem;
+    font-size: 1.1rem;
+    font-weight: 300;
 }
 
 .arrow{
@@ -260,16 +267,35 @@ h2{
 @media screen and (min-width: 480px){
 
     h2{
-        font-size: 3.9rem;
+        font-size: 4.2rem;
     }
 
     .strategic img {
-        padding: 120px 20px 80px;
+        padding: 120px 20px 60px;
       }
 
       .app-developement{
         margin-bottom: 60px;
+        padding: 30px 45px;
       }
+      
+      .app-developement img{
+        padding: 0 15px;
+    }
+
+    .app-developement p{
+        line-height: 1.9rem;
+        font-size: 1rem;
+    }
+
+    .app-developement h1{
+        padding: 20px;
+    }
+
+    .arrow{
+        margin-top: 30px;
+        padding: 1rem 1.2rem;
+    }
 
 }
 
@@ -307,7 +333,7 @@ h2{
 }
 
 .testimonials-wrap{
-    margin: 60px 30px 70px;
+    margin: 40px 32px 70px;
 }
 
 .testimonials{
@@ -315,9 +341,10 @@ h2{
 }
 
 .testimonials p{
-    font-size: 1.25rem;
-    line-height: 2.5rem;
+    font-size: 1.15rem;
+    line-height: 2.15rem;
     padding: 20px 10px;
+    font-weight: 300;
 }
 
 .title{
@@ -326,9 +353,10 @@ h2{
 
 h4{
     color: #9792e4;
-    font-size: 2.2rem;
+    font-size: 2.1rem;
     font-weight: 700;
     padding-bottom: 10px;
+    line-height: 3rem;
 }
 
 .testimonial-card{
@@ -336,7 +364,7 @@ h4{
     color: white;
     border-radius: 50px;
     flex-direction: column;
-    padding: 25px 20px;
+    padding: 30px 10px;
     margin: 30px 0;
     align-items: center;
 }
@@ -345,9 +373,14 @@ h4{
     flex-direction: column;
 }
 
+.testimonials-text p{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
 .testimonial-img{
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -358,14 +391,46 @@ h5{
 }
 
 @media screen and (min-width: 480px){
+
+    .testimonials-wrap {
+        margin: 40px 32px 80px;
+      }
+
+    .testimonials .title{
+        padding: 15px 0 25px;
+    }
+
+    h4{
+        font-size: 2.6rem;
+    }
+
+    .testimonials p{
+        font-size: 1.2rem;
+        padding: 25px 8px 20px;
+        font-weight: 400;
+    }
+
     .testimonial-card{
         flex-direction: row;
+        padding: 15px 0px 30px;
+    }
+
+    .testimonial-img{
+        margin: 17px 34px 17px 16px;
     }
 
     .testimonials-text{
         flex-direction: column;
         justify-content: center;
         text-align: left;
+    }
+
+    .testimonials-text p{
+        padding: 0;
+    }
+
+    h5{
+        padding-top: 22px;
     }
 
 }
@@ -394,23 +459,23 @@ h5{
 .benefits{
     background-color: #9792e4;
     flex-direction: column;
-    margin: 60px 30px 70px;
+    margin: 60px 32px 70px;
     text-align: center;
     padding: 20px 0 50px;
 }
 
 .benefits h4{
     color: white;
-    padding: 60px 0;
+    padding: 45px 0;
 }
 
 .benefit-card{
-    border-radius: 30px;
+    border-radius: 20px;
     background-color: white;
     color: #737373;
     text-align:left;
     margin: 15px 0;
-    padding:35px;
+    padding: 31px;
 }
 
 .card-wrapper{
@@ -429,14 +494,15 @@ h6{
 }
 
 .benefits p{
-    font-size: 1rem;
+    font-size: .95rem;
+    padding: 20px 0;
 }
 
 .benefit-card button{
     background-color: #9792e4;
     color: white;
-    padding: 14px 55px;
-    font-size: 1rem;
+    padding: 12px 47px;
+    font-size: .9rem;
     font-weight: 600;
 }
 
@@ -449,13 +515,17 @@ h6{
     }
 
     .benefit-card{
-        width: calc( (100% / 2) - 20px);
+        width: calc( (100% / 2) - 15px);
     }
     
     h6{
         font-size: 4.5rem;
         margin-bottom: 10px;
     }
+
+    .benefits p {
+        line-height: 1.7rem;
+      }
 }
 
 @media screen and (min-width: 810px){
@@ -467,17 +537,18 @@ h6{
 
 .about-us{
     flex-direction: column;
-    margin: 60px 30px 70px;
+    margin: 60px 32px 80px;
 }
 
 .about-us h4{
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     padding-top: 20px;
 }
 
 .about-us p{
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     line-height: 2.5rem;
+    font-weight: 300;
 }
 
 .about-us-guy{
@@ -491,9 +562,9 @@ h6{
 }
 
 .about-us-guy p{
-    font-size: 1.60rem;
+    font-size: 1.65rem;
     color: #9792e4;
-    font-weight: 700;
+    font-weight: 800;
     line-height: 2.3rem;
 }
 
@@ -516,11 +587,17 @@ h6{
 
     .about-us{
         flex-direction: row;
+        margin: 70px 32px 130px;
     }
 
     .about-us h4{
-        font-size: 4rem;
+        font-size: 4.2rem;
     }
+
+    .about-us-text p {
+        padding: 40px 20px 10px 0;
+        font-size: 1.05rem;
+      }
 
     .about-us-text{
         width: 65%;
@@ -530,11 +607,23 @@ h6{
     .about-us-guy .testimonial-img{
         width: 230px;
         height: 230px;
+        margin: 0;
     }
 
     .about-us-guy{
         width: 35%;
-        padding: 30px 5px 0 0;
+        padding-right:20px;
+    }
+
+    .about-us-guy p{
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        font-weight: 600;
+        padding-top: 20px;
+    }
+    
+    .about-us-guy button{
+        margin-top: 25px;
     }
 
 }
@@ -566,17 +655,20 @@ h6{
     background-color: #9792e4;
     color: white;
     text-align: center;
-    padding: 40px 40px 25px;
+    padding: 40px 40px 30px;
 }
 
 #purple-title{
     color:#d5d4f4;
     font-size: 1.25rem;
+    padding: 25px 0 15px;
 }
 
 .get-started h4{
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    padding-bottom: 30px;
+    line-height: 2.4rem;
 }
 
 #free{
@@ -586,7 +678,7 @@ h6{
 }
 
 .get-started p{
-    font-size: .9rem;
+    font-size: .95rem;
 }
 
 .get-started button{
@@ -598,7 +690,9 @@ h6{
 }
 
 .get-started .copyright{
-    font-size: .8rem;
+    font-size: .85rem;
+    line-height: 1.1rem;
+    padding: 35px 0 30px;
 }
 
 span{
@@ -664,6 +758,7 @@ footer{
 footer p{
     font-size: .82rem;
     line-height: 1.1rem;
+    padding: 30px 0;
 }
 
 footer span{
@@ -671,15 +766,15 @@ footer span{
     text-decoration: underline;
 }
 
-footer .container{
-    width: 420px;
-}
-
 @media screen and (min-width: 480px){
 
     footer p{
         font-size: .9rem;
         line-height: 1.2rem;
+    }
+
+    footer .container{
+        width: 420px;
     }
 }
 
