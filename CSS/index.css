@@ -121,6 +121,7 @@ p{
 .big-info img{
     width: 250px;
     padding-top: 20px;
+    object-fit: contain;
 }
 
 .small-info{
@@ -186,9 +187,9 @@ p{
         flex-direction: row;
     }
 
-    .big-info img{
+    /*.big-info img{
         margin: 20px 50px 0;
-    }
+    }*/
     
 }
 
@@ -565,7 +566,7 @@ h6{
     background-color: #9792e4;
     color: white;
     text-align: center;
-    padding: 50px 40px;
+    padding: 40px 40px 25px;
 }
 
 #purple-title{
@@ -611,8 +612,12 @@ span{
         padding: 0;
     }
 
+    .get-started{
+        padding: 65px 40px 25px;
+    }
+
     .get-started h4{
-        font-size: 2.4rem;
+        font-size: 2.9rem;
         padding: 10px 0;
     }
     
@@ -623,7 +628,7 @@ span{
     
     .get-started p{
         font-size: 1rem;
-        padding: 25px 85px 30px;
+        padding: 60px 40px 30px;
     }
     
     .get-started button{
@@ -639,10 +644,43 @@ span{
 }
 
 @media screen and (min-width: 810px){
-    
+   .get-started .container{
+        width: 40%;
+    }
+
+    .get-started p{
+        font-size: 1rem;
+        padding: 30px 100px 35px;
+    }
+}
+
+footer{
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 15px 30px ;
+}
+
+footer p{
+    font-size: .82rem;
+    line-height: 1.1rem;
+}
+
+footer span{
+    color: #9792e4;
+    text-decoration: underline;
+}
+
+footer .container{
+    width: 420px;
 }
 
 @media screen and (min-width: 480px){
+
+    footer p{
+        font-size: .9rem;
+        line-height: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 810px){
