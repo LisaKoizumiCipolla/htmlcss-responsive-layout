@@ -314,15 +314,13 @@ h2{
 }
 
 .testimonials p{
-    font-size: 1.15rem;
-    line-height: 2rem;
-    padding: 20px 0;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    padding: 20px 10px;
 }
 
-#title{
+.title{
     color: black;
-    padding: 0 0 20px;
-    font-size: 1.1rem;
 }
 
 h4{
@@ -563,7 +561,81 @@ h6{
     }
 }
 
+.get-started{
+    background-color: #9792e4;
+    color: white;
+    text-align: center;
+    padding: 50px 40px;
+}
+
+#purple-title{
+    color:#d5d4f4;
+    font-size: 1.25rem;
+}
+
+.get-started h4{
+    color: white;
+    font-size: 1.7rem;
+}
+
+#free{
+    color:#fdc15f;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.get-started p{
+    font-size: .9rem;
+}
+
+.get-started button{
+    background-color: white;
+    color: #9792e4;
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 20px 80px;
+}
+
+.get-started .copyright{
+    font-size: .8rem;
+}
+
+span{
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 480px){
+
+
+    #purple-title{
+        padding: 0;
+    }
+
+    .get-started h4{
+        font-size: 2.4rem;
+        padding: 10px 0;
+    }
+    
+    #free{
+        font-size: 5.3rem;
+        font-weight: 700;
+    }
+    
+    .get-started p{
+        font-size: 1rem;
+        padding: 25px 85px 30px;
+    }
+    
+    .get-started button{
+        font-size: 1.15rem;
+        font-weight: 500;
+        padding: 30px 100px;
+    }
+    
+    .get-started .copyright{
+        font-size: .95rem;
+    }
+
 }
 
 @media screen and (min-width: 810px){
